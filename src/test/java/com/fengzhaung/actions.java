@@ -1,7 +1,6 @@
-package fengzhaung;
+package com.fengzhaung;
 
 import org.openqa.selenium.By;
-
 /*
 二次封装selenium方法
  */

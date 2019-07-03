@@ -1,8 +1,9 @@
-package fengzhaung;
+package com.fengzhaung;
 
 import log4j.LoggerControler;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+
 
 
 public class seleniumdriver {

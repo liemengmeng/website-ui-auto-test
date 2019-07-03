@@ -1,14 +1,19 @@
-package fengzhaung;
+package com.fengzhaung;
 
 import log4j.LoggerControler;
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
+
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.Augmenter;
+import org.testng.annotations.Test;
 import tools.MyFile;
 
 import java.io.File;
 import java.io.IOException;
+
 
 
 /**

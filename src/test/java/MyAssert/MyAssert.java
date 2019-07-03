@@ -1,6 +1,6 @@
 package MyAssert;
 
-import fengzhaung.ScreenShot;
+import com.fengzhaung.ScreenShot;
 import log4j.LoggerControler;
 import org.testng.Assert;
 import org.testng.collections.Lists;
@@ -10,12 +10,13 @@ import java.util.*;
 import java.util.regex.Pattern;
 
 import static org.testng.internal.EclipseInterface.*;
-
+import static org.testng.internal.EclipseInterface.ASSERT_MIDDLE;
+import static org.testng.internal.EclipseInterface.ASSERT_RIGHT;
 /*
 重写testng.Assert方法，在fail方法内加入截图方法
  */
 public class MyAssert extends Assert {
-    static final LoggerControler logger = LoggerControler.getLogger(MyAssert.MyAssert.class);
+    static final LoggerControler logger = LoggerControler.getLogger(MyAssert.class);
 
     /**
      * Asserts that a condition is true. If it isn't,
@@ -845,7 +846,7 @@ public class MyAssert extends Assert {
         }
 
         if (fail) {
-            MyAssert.MyAssert.fail(message);
+            MyAssert.fail(message);
         }
     }
 
@@ -919,7 +920,7 @@ public class MyAssert extends Assert {
         }
 
         if (fail) {
-            MyAssert.MyAssert.fail(message);
+            MyAssert.fail(message);
         }
     }
 
@@ -937,7 +938,7 @@ public class MyAssert extends Assert {
         }
 
         if (fail) {
-            MyAssert.MyAssert.fail(message);
+            MyAssert.fail(message);
         }
     }
 
@@ -1036,7 +1037,7 @@ public class MyAssert extends Assert {
             logger.info("前缀匹配校验成功");
         } else {
             logger.error("前缀匹配校验失败！\n待校验的字符窜为:" + content + "\n校验的前缀表达式为:" + prefix);
-            MyAssert.MyAssert.fail();
+            MyAssert.fail();
         }
     }
 
@@ -1047,7 +1048,7 @@ public class MyAssert extends Assert {
      * @param prefix  前缀表达式
      */
     public static void assertStartWith(String content, String prefix) {
-        MyAssert.MyAssert.assertStartWith(content, prefix, null);
+        MyAssert.assertStartWith(content, prefix, null);
     }
 
 
@@ -1066,7 +1067,7 @@ public class MyAssert extends Assert {
             logger.info("后缀匹配校验成功！");
         } else {
             logger.error("后缀匹配校验失败！\n待校验的字符窜为:" + content + "\n校验的后缀表达式为:" + endfix);
-            MyAssert.MyAssert.fail();
+            MyAssert.fail();
         }
     }
 
@@ -1077,7 +1078,7 @@ public class MyAssert extends Assert {
      * @param endfix  前缀表达式
      */
     public static void assertEndWith(String content, String endfix) {
-        MyAssert.MyAssert.assertEndWith(content, endfix, null);
+        MyAssert.assertEndWith(content, endfix, null);
     }
 
 
@@ -1096,7 +1097,7 @@ public class MyAssert extends Assert {
             logger.info("匹配校验成功！");
         } else {
             logger.error("匹配校验失败！\n待校验的字符串为:" + matcher + "\n校验的正则表达式为:" + regex);
-            MyAssert.MyAssert.fail();
+            MyAssert.fail();
         }
     }
 
@@ -1107,7 +1108,7 @@ public class MyAssert extends Assert {
      * @param regex   校验的正则表达式
      */
     public static void assertMatch(String matcher, String regex) {
-        MyAssert.MyAssert.assertMatch(matcher, regex, null);
+        MyAssert.assertMatch(matcher, regex, null);
     }
 
     /**
@@ -1125,7 +1126,7 @@ public class MyAssert extends Assert {
             logger.info("匹配校验成功！");
         } else {
             logger.error("匹配校验失败！\n待校验的字符串为:" + matcher + "\n校验的正则表达式为:" + regex);
-            MyAssert.MyAssert.fail();
+            MyAssert.fail();
         }
     }
 
@@ -1136,7 +1137,7 @@ public class MyAssert extends Assert {
      * @param regex   校验的正则表达式
      */
     public static void assertNoMatch(String matcher, String regex) {
-        MyAssert.MyAssert.assertNoMatch(matcher, regex, null);
+        MyAssert.assertNoMatch(matcher, regex, null);
     }
 
 
@@ -1154,7 +1155,7 @@ public class MyAssert extends Assert {
             logger.info("匹配校验成功！");
         } else {
             logger.error("匹配校验失败！\n待校验的字符串为:" + content + "\n包含字符串为:" + included);
-            MyAssert.MyAssert.fail(message);
+            MyAssert.fail(message);
         }
     }
 
@@ -1165,7 +1166,7 @@ public class MyAssert extends Assert {
      * @param included 包含的字符串
      */
     public static void assertInclude(String content, String included) {
-        MyAssert.MyAssert.assertInclude(content, included, null);
+        MyAssert.assertInclude(content, included, null);
     }
 }
 
