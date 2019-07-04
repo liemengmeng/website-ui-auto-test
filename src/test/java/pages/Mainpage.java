@@ -47,5 +47,11 @@ public static By yezhu=By.xpath("//*[@id=\"app\"]/div/div/div/div[1]/div[4]/div/
 
 
     //社会责任
+    //右滑
+    public static By nexts=By.xpath("//*[@id=\"app\"]/div/div/div/div[1]/div[8]/div/div/div/div[2]/div/div/div[4]");
+    //左滑
+public static By prevs=By.xpath("//*[@id=\"app\"]/div/div/div/div[1]/div[8]/div/div/div/div[2]/div/div/div[3]");
+//打开详情
+    public static By zeren=By.xpath("//*[@id=\"app\"]/div/div/div/div[1]/div[8]/div/div/div/div[2]/div/div/div[2]/div/div[1]/div/a/div/div");
 
         }

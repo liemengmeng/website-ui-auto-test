@@ -1,8 +1,9 @@
-package TeseCase;
+package Logic;
 
 import MyAssert.MyAssert;
 import com.fengzhaung.seleniumdriver;
 import org.openqa.selenium.By;
+
 import org.testng.annotations.Test;
 import pages.Mainpage;
 
@@ -11,10 +12,7 @@ import java.util.Set;
 
 public class MainPage extends seleniumdriver {
     //首页+新闻
-    @Test
     public static void news() {
-        seleniumdriver.open("chrome");
-        driver.get("http://192.168.100.17:81/#/home");
         //点击下载按钮二维码打开
         com.fengzhaung.actions.clik(Mainpage.xiazai);
         //前往下一页
@@ -47,8 +45,9 @@ public class MainPage extends seleniumdriver {
         //前往下一页（平台价值）
         com.fengzhaung.actions.clik(Mainpage.xiala);
     }
+
+
 //平台价值
-    @Test
     public static void PlatformValue() {
         try {
             Thread.sleep(1000);
@@ -75,8 +74,10 @@ public class MainPage extends seleniumdriver {
         //前往下一页(用户类型)
         com.fengzhaung.actions.clik(Mainpage.xiala);
     }
+
+
 //用户类型
-    @Test
+
     public static void userType() {
         com.fengzhaung.actions.clik(Mainpage.yezhu);
         String h1 = driver.getWindowHandle();
@@ -135,7 +136,6 @@ public class MainPage extends seleniumdriver {
 
     }
     //场景
-    @Test
 public static void Scene(){
 
         com.fengzhaung.actions.clik(Mainpage.bangonglou);
@@ -143,7 +143,6 @@ public static void Scene(){
         com.fengzhaung.actions.clik(Mainpage.xiala);
 }
 //技术特点
-    @Test
     public static void technical(){
         com.fengzhaung.actions.clik(Mainpage.next);
         com.fengzhaung.actions.clik(Mainpage.next);
@@ -173,18 +172,29 @@ public static void Scene(){
 
 
     //社会责任
-    @Test
     public static void SocialValue(){
-        seleniumdriver.open("chrome");
-        driver.get("http://192.168.100.17:81/#/home");
+        com.fengzhaung.actions.clik(Mainpage.nexts);
+        com.fengzhaung.actions.clik(Mainpage.prevs);
+        com.fengzhaung.actions.clik(Mainpage.zeren);
+        String h1=driver.getWindowHandle();
+        Set<String> handles=driver.getWindowHandles();
+        for (String handle:handles){
+            if (handle.equals(h1)){
+                continue;
+            }else{
+                driver.switchTo().window(handle);
+                String text= driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div/div[1]/div[1]/h1")).getText();
+                MyAssert.assertEquals(text,"对国家");
+                seleniumdriver.close();
+            }
+        }
+driver.switchTo().window(h1);
+        //前往下一页(底页)
         com.fengzhaung.actions.clik(Mainpage.xiala);
-        com.fengzhaung.actions.clik(Mainpage.xiala);
-        com.fengzhaung.actions.clik(Mainpage.xiala);
-        com.fengzhaung.actions.clik(Mainpage.xiala);
-        com.fengzhaung.actions.clik(Mainpage.xiala);
-        com.fengzhaung.actions.clik(Mainpage.xiala);
-
-
+        //返回到顶部
+        com.fengzhaung.actions.clik(Mainpage.logo);
 
     }
+
+
 }
