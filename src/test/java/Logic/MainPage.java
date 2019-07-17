@@ -3,8 +3,6 @@ package Logic;
 import MyAssert.MyAssert;
 import com.fengzhaung.seleniumdriver;
 import org.openqa.selenium.By;
-
-import org.testng.annotations.Test;
 import pages.Mainpage;
 
 
@@ -20,12 +18,32 @@ public class MainPage extends seleniumdriver {
         //点击优能栈logo返回到首页
 
         com.fengzhaung.actions.clik(Mainpage.logo);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         //进入新闻页面
         com.fengzhaung.actions.clik(Mainpage.xiala);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         //进入新闻详情页面
         com.fengzhaung.actions.clik(Mainpage.xiangqing);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         //获取当前页面句柄
         String h1 = driver.getWindowHandle();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         //获取所有页面句柄
         Set<String> handles = driver.getWindowHandles();
         //循环句柄
@@ -34,16 +52,56 @@ public class MainPage extends seleniumdriver {
                 continue;
             } else {
                 driver.switchTo().window(handle);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 com.fengzhaung.actions.clik(Mainpage.down);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
                 com.fengzhaung.actions.clik(Mainpage.up);
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
             }
             //关闭新闻详情页
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
             seleniumdriver.close();
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
         //切换到原来的句柄
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         driver.switchTo().window(h1);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         //前往下一页（平台价值）
         com.fengzhaung.actions.clik(Mainpage.xiala);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
 
@@ -55,7 +113,17 @@ public class MainPage extends seleniumdriver {
             e.printStackTrace();
         }
         com.fengzhaung.actions.clik(Mainpage.right);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         com.fengzhaung.actions.clik(Mainpage.right);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         com.fengzhaung.actions.clik(Mainpage.right);
         try {
             Thread.sleep(1000);
@@ -63,7 +131,17 @@ public class MainPage extends seleniumdriver {
             e.printStackTrace();
         }
         com.fengzhaung.actions.clik(Mainpage.left);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         com.fengzhaung.actions.clik(Mainpage.left);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         com.fengzhaung.actions.clik(Mainpage.left);
         try {
             Thread.sleep(1000);
@@ -71,14 +149,29 @@ public class MainPage extends seleniumdriver {
             e.printStackTrace();
         }
         com.fengzhaung.actions.clik(Mainpage.pingtai);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         //前往下一页(用户类型)
         com.fengzhaung.actions.clik(Mainpage.xiala);
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
 
 //用户类型
 
     public static void userType() {
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         com.fengzhaung.actions.clik(Mainpage.yezhu);
         String h1 = driver.getWindowHandle();
         Set<String> handles1 = driver.getWindowHandles();

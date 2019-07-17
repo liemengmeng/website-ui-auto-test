@@ -7,12 +7,14 @@ import org.testng.annotations.Test;
 public class gaunwang  extends seleniumdriver {
     @Test
     public static void show1() {
+
         MainPage.news();
     }
 
     @Test
     public static void show2() {
         MainPage.PlatformValue();
+
     }
 
     @Test

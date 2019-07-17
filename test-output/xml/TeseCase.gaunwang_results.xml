@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="官网测试"
+           tests="6"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="43.409">
+  <properties />
+  
+  
+            <testcase name="show6" time="3.149" classname="TeseCase.gaunwang" />
+                <testcase name="show1" time="16.713" classname="TeseCase.gaunwang" />
+                <testcase name="show3" time="7.858" classname="TeseCase.gaunwang" />
+                <testcase name="show2" time="11.169" classname="TeseCase.gaunwang" />
+                <testcase name="show4" time="0.588" classname="TeseCase.gaunwang" />
+                <testcase name="show5" time="3.932" classname="TeseCase.gaunwang" />
+      
+</testsuite>
