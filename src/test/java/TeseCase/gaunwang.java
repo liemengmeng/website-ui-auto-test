@@ -29,17 +29,32 @@ public class gaunwang  extends seleniumdriver {
 
     @Test
     public static void show4() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         MainPage.Scene();
     }
 
     @Test
     public static void show5() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         MainPage.technical();
 
     }
 
     @Test
     public static void show6() {
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         MainPage.SocialValue();
     }
 }

@@ -4,15 +4,15 @@
            failures="0"
            errors="0"
            skipped="0"
-           time="43.409">
+           time="46.935">
   <properties />
   
   
-            <testcase name="show6" time="3.149" classname="TeseCase.gaunwang" />
-                <testcase name="show1" time="16.713" classname="TeseCase.gaunwang" />
-                <testcase name="show3" time="7.858" classname="TeseCase.gaunwang" />
-                <testcase name="show2" time="11.169" classname="TeseCase.gaunwang" />
-                <testcase name="show4" time="0.588" classname="TeseCase.gaunwang" />
-                <testcase name="show5" time="3.932" classname="TeseCase.gaunwang" />
+            <testcase name="show6" time="3.205" classname="TeseCase.gaunwang" />
+                <testcase name="show1" time="16.458" classname="TeseCase.gaunwang" />
+                <testcase name="show3" time="7.881" classname="TeseCase.gaunwang" />
+                <testcase name="show2" time="11.016" classname="TeseCase.gaunwang" />
+                <testcase name="show4" time="2.790" classname="TeseCase.gaunwang" />
+                <testcase name="show5" time="5.585" classname="TeseCase.gaunwang" />
       
 </testsuite>
