@@ -54,4 +54,33 @@ public static By prevs=By.xpath("//*[@id=\"app\"]/div/div/div/div[1]/div[8]/div/
 //打开详情
     public static By zeren=By.xpath("//*[@id=\"app\"]/div/div/div/div[1]/div[8]/div/div/div/div[2]/div/div/div[2]/div/div[1]/div/a/div/div");
 
+    //页面底部
+    //联系方式
+    public static By lianxi=By.xpath("//*[@id=\"app\"]/div/div/div/div/div[8]/div/div/div/div[3]/div/div/div[1]/div[4]/div[2]/span/a/p");
+    //联系我们页面-联系我们
+    public static By getLianxi=By.xpath("//*[@id=\"app\"]/div/div[1]/div/div/p[1]");
+
+    //开放平台
+    //商家后台
+    public static By shop=By.xpath("//*[@id=\"app\"]/div/div/div/div/div[8]/div/div/div/div[3]/div/div/div[1]/div[3]/div[2]/span[1]/p");
+    //入驻平台
+    public static By ruzhu=By.xpath("//*[@id=\"app\"]/div/div/div/div/div[8]/div/div/div/div[3]/div/div/div[1]/div[3]/div[2]/span[2]/a/p");
+    public static By login =By.xpath("//*[@id=\"app\"]/div/div/div/div[1]/div[1]/div/div/div[2]/div[3]/div/form/button");
+    public static By xieyi =By.xpath("//*[@id=\"app\"]/div/div/div/div[1]/div[1]/div/div/div[2]/div[3]/div[2]/div[1]/div[1]/div[2]/a[1]");
+    //招募合伙人
+    public static By zhaomu=By.xpath("//*[@id=\"app\"]/div/div/div/div/div[8]/div/div/div/div[3]/div/div/div[1]/div[3]/div[2]/span[3]/a/p");
+
+//新闻及媒体
+    //今日头条
+public static By toutiao=By.xpath("//*[@id=\"app\"]/div/div/div/div/div[8]/div/div/div/div[3]/div/div/div[1]/div[2]/div[2]/span[1]/p");
+//百度新闻
+public static By baiduNews=By.xpath("//*[@id=\"app\"]/div/div/div/div/div[8]/div/div/div/div[3]/div/div/div[1]/div[2]/div[2]/span[2]/p");
+//搜狐新闻
+    public static By souhuNews=By.xpath("//*[@id=\"app\"]/div/div/div/div/div[8]/div/div/div/div[3]/div/div/div[1]/div[2]/div[2]/span[3]/p");
+
+
+    //关于优能栈
+    //公司介绍
+    public static By jieshao=By.xpath("//*[@id=\"app\"]/div/div/div/div/div[8]/div/div/div/div[3]/div/div/div[1]/div[1]/div[2]/span[1]/a/p");
+
         }
