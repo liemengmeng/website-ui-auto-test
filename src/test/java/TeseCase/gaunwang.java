@@ -57,7 +57,7 @@ public class gaunwang  extends seleniumdriver {
         }
         MainPage.SocialValue();
     }
-    @Test
+   /* @Test
     public static void show7(){
         try {
             MainPage.dibu();
@@ -65,4 +65,5 @@ public class gaunwang  extends seleniumdriver {
             e.printStackTrace();
         }
     }
+    */
 }

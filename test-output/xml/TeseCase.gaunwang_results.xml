@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuite name="官网测试"
-           tests="7"
+           tests="6"
            failures="0"
            errors="0"
            skipped="0"
-           time="92.059">
+           time="51.273">
   <properties />
   
   
-            <testcase name="show6" time="4.780" classname="TeseCase.gaunwang" />
-                <testcase name="show7" time="39.643" classname="TeseCase.gaunwang" />
-                <testcase name="show1" time="19.115" classname="TeseCase.gaunwang" />
-                <testcase name="show3" time="8.067" classname="TeseCase.gaunwang" />
-                <testcase name="show2" time="11.327" classname="TeseCase.gaunwang" />
-                <testcase name="show4" time="2.550" classname="TeseCase.gaunwang" />
-                <testcase name="show5" time="6.577" classname="TeseCase.gaunwang" />
+            <testcase name="show5" time="6.189" classname="TeseCase.gaunwang" />
+                <testcase name="show2" time="11.407" classname="TeseCase.gaunwang" />
+                <testcase name="show6" time="4.622" classname="TeseCase.gaunwang" />
+                <testcase name="show1" time="18.558" classname="TeseCase.gaunwang" />
+                <testcase name="show3" time="7.950" classname="TeseCase.gaunwang" />
+                <testcase name="show4" time="2.547" classname="TeseCase.gaunwang" />
       
 </testsuite>
