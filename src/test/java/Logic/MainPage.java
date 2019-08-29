@@ -5,8 +5,8 @@ import com.fengzhaung.seleniumdriver;
 import org.openqa.selenium.By;
 
 
-
-
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import pages.Mainpage;
 
 
@@ -358,7 +358,11 @@ public class MainPage extends seleniumdriver {
                 //勾选协议
               //  com.fengzhaung.actions.clik(Mainpage.xieyi);
 
-                //选择19800套餐
+
+
+
+
+    //选择19800套餐
                 Thread.sleep(2000);
                 driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[1]/div[1]/div/div/div[2]/div[3]/div[2]/div/div[1]/ul/li[3]/img")).click();
                 //选择微信支付
