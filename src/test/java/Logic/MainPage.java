@@ -355,12 +355,6 @@ public class MainPage extends seleniumdriver {
                 //点击登录按钮
         com.fengzhaung.actions.clik(Mainpage.login);
                 Thread.sleep(2000);
-                //勾选协议
-              //  com.fengzhaung.actions.clik(Mainpage.xieyi);
-
-
-
-
 
     //选择19800套餐
                 Thread.sleep(2000);
@@ -368,7 +362,16 @@ public class MainPage extends seleniumdriver {
                 //选择微信支付
                 Thread.sleep(1000);
                 driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[1]/div[1]/div/div/div[2]/div[3]/div[2]/div/div[2]/div[1]/img")).click();
-                Thread.sleep(1000);
+                Thread.sleep(2000);
+//前往下一页面
+          //      driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[2]/div")).click();
+              //  Thread.sleep(2000);
+//回到开通会员页面
+             //   driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/header/div[2]/div")).click();
+              //  Thread.sleep(2000);
+                //勾选协议
+                com.fengzhaung.actions.clik(Mainpage.xieyi);
+
                 //点击确认支付
                 //  driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[1]/div[1]/div/div/div[2]/div[3]/div[2]/div[2]/button")).click();
                 //driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[1]/div[1]/div/div/div[2]/div[5]/button[2]")).click();

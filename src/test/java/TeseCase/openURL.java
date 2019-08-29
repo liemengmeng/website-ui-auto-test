@@ -14,7 +14,7 @@ public class openURL extends seleniumdriver {
 
     @AfterSuite
     public static void closeAll(){
-        seleniumdriver.closeAll();
+     seleniumdriver.closeAll();
     }
 }
 
