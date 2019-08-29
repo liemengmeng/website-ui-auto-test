@@ -66,7 +66,7 @@ public static By prevs=By.xpath("//*[@id=\"app\"]/div/div/div/div[1]/div[8]/div/
     //入驻平台
     public static By ruzhu=By.xpath("//*[@id=\"app\"]/div/div/div/div/div[8]/div/div/div/div[3]/div/div/div[1]/div[3]/div[2]/span[2]/a/p");
     public static By login =By.xpath("//*[@id=\"app\"]/div/div/div/div[1]/div[1]/div/div/div[2]/div[3]/div/form/button");
-    public static By xieyi =By.xpath("//*[@id=\"app\"]/div/div/div/div[1]/div[1]/div/div/div[2]/div[3]/div[2]/div[1]/div[1]/div[2]/a[1]");
+    public static By xieyi =By.xpath("//*[@id=\"app\"]/div/div/div/div[1]/div[1]/div/div/div[2]/div[3]/div[2]/div/div[3]/div/a[1]");
     //招募合伙人
     public static By zhaomu=By.xpath("//*[@id=\"app\"]/div/div/div/div/div[8]/div/div/div/div[3]/div/div/div[1]/div[3]/div[2]/span[3]/a/p");
 

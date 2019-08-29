@@ -354,15 +354,16 @@ public class MainPage extends seleniumdriver {
                 driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[1]/div[1]/div/div/div[2]/div[3]/div/form/input[2]")).sendKeys("lmm123456");
                 //点击登录按钮
         com.fengzhaung.actions.clik(Mainpage.login);
-                Thread.sleep(1000);
+                Thread.sleep(2000);
                 //勾选协议
-                com.fengzhaung.actions.clik(Mainpage.xieyi);
+              //  com.fengzhaung.actions.clik(Mainpage.xieyi);
+
                 //选择19800套餐
-                Thread.sleep(1000);
-                driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[1]/div[1]/div/div/div[2]/div[3]/div[2]/div[1]/div[2]/ul/li[3]")).click();
+                Thread.sleep(2000);
+                driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[1]/div[1]/div/div/div[2]/div[3]/div[2]/div/div[1]/ul/li[3]/img")).click();
                 //选择微信支付
                 Thread.sleep(1000);
-                driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[1]/div[1]/div/div/div[2]/div[3]/div[2]/div[1]/div[3]/div[1]")).click();
+                driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[1]/div[1]/div/div/div[2]/div[3]/div[2]/div/div[2]/div[1]/img")).click();
                 Thread.sleep(1000);
                 //点击确认支付
                 //  driver.findElement(By.xpath("//*[@id=\"app\"]/div/div/div/div[1]/div[1]/div/div/div[2]/div[3]/div[2]/div[2]/button")).click();
